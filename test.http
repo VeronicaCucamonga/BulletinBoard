@@ -1,0 +1,47 @@
+GET https://localhost:8080 HTTP/1.1
+###
+GET https://localhost:8080/test HTTP/1.1
+###
+GET https://localhost:8080/api HTTP/1.1
+###
+GET https://localhost:8080/api/issues HTTP/1.1
+###
+GET https://localhost:8080/api/routes/issues HTTP/1.1
+###
+DELETE https://localhost:8080/api/issues/6343ca25abe3d7869240d1c1 HTTP/1.1
+###
+POST https://localhost:8080/api/issues HTTP/1.1
+content-type: application/json
+
+{
+    "id": "4",
+    "post": "Issue 4"
+}
+###
+
+POST https://localhost:8080/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "test2",
+    "password": "secretpassword"
+}
+###
+POST https://localhost:8080/api/users/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "test",
+    "password": "secretpassword"
+}
+###
+
+POST https://localhost:8080/api/users/login HTTP/1.1
+content-type: application/json]
+
+{
+ "username": "test2",
+ "password": "secretpassword"
+}
+
+
